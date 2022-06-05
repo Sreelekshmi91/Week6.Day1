@@ -110,12 +110,12 @@ public class StepDefinitionfor5TestCases extends BaseClass {
 	}
 
 	@When("Click on Phone")
-	public void Phone() {
+	public void phone() {
 		driver.findElement(By.xpath("//span[text()='Phone']")).click();
 	}
 
 	@Given("Enter the Phone Number as 9")
-	public void PhoneNumber() {
+	public void phoneNumber() {
 		driver.findElement(By.xpath("//input[@name='phoneNumber']")).sendKeys("9");
 
 	}
@@ -126,7 +126,7 @@ public class StepDefinitionfor5TestCases extends BaseClass {
 	}
 
 	@When("Click on Find Leads1")
-	public void Find_leads1() {
+	public void find_leads1() {
 		driver.findElement(By.xpath("//button[text()='Find Leads']")).click();
 	}
 
@@ -136,7 +136,7 @@ public class StepDefinitionfor5TestCases extends BaseClass {
 	}
 
 	@When("Click on LeadID")
-	public void LeadID1() {
+	public void leadID1() {
 		String leadID = driver.findElement(By.xpath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a"))
 				.getText();
 		driver.findElement(By.xpath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a")).click();
@@ -146,24 +146,24 @@ public class StepDefinitionfor5TestCases extends BaseClass {
 	}
 
 	@When("Click on Lead ID")
-	public void LeadID() {
+	public void leadID() {
 		driver.findElement(By.xpath("//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a")).click();
 	}
 
 	@When("Click on Edit Lead")
-	public void EditLead() {
+	public void editLead() {
 		driver.findElement(By.linkText("Edit")).click();
 	}
 
 	@Given("Update the Company Name as TCS")
-	public void CompanyName() {
+	public void companyName() {
 		WebElement companyName = driver.findElement(By.id("updateLeadForm_companyName"));
 		companyName.clear();
 		companyName.sendKeys("TCS");
 	}
 
 	@When("Click on Duplicate Lead")
-	public void DuplicateLead() {
+	public void duplicateLead() {
 		driver.findElement(By.linkText("Duplicate Lead")).click();
 	}
 
@@ -186,7 +186,7 @@ public class StepDefinitionfor5TestCases extends BaseClass {
 	}
 
 	@When("Click on Find Leads2")
-	public void Find_leads2() {
+	public void find_leads2() {
 		driver.findElement(By.xpath("//button[text()='Find Leads']")).click();
 	}
 
